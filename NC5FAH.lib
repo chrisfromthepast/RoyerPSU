@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# NC5FAH
+#
+DEF NC5FAH J 0 40 Y Y 1 L N
+F0 "J" -200 430 50 H V L BNN
+F1 "NC5FAH" -200 -500 50 H V L BNN
+F2 "NEUTRIK_NC5FAH" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Neutrik" 0 0 50 H I L BNN "MANUFACTURER"
+F5 "N/A" 0 0 50 H I L BNN "PARTREV"
+F6 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F7 "30mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+DRAW
+S -200 -400 200 400 0 0 10 f
+X 2 2 -300 200 100 R 40 40 0 0 P 
+X 1 1 -300 300 100 R 40 40 0 0 P 
+X 3 3 -300 100 100 R 40 40 0 0 P 
+X 4 4 -300 0 100 R 40 40 0 0 P 
+X 5 5 -300 -100 100 R 40 40 0 0 P 
+X SHIELD 6 -300 -300 100 R 40 40 0 0 P 
+X SHIELD 7 -300 -300 100 R 40 40 0 0 P 
+X SHIELD 8 -300 -300 100 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

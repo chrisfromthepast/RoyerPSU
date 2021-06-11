@@ -1,0 +1,308 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack2_Ground J101
+U 1 1 604E1C87
+P 1750 2850
+F 0 "J101" H 1782 3175 50  0000 C CNN
+F 1 "bass guitar input" H 1782 3084 50  0000 C CNN
+F 2 "digikey:PinHeader_1x2_P3.96mm_Drill1.6mm" H 1750 2850 50  0001 C CNN
+F 3 "~" H 1750 2850 50  0001 C CNN
+	1    1750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C101
+U 1 1 604E1E74
+P 2450 2850
+F 0 "C101" V 2221 2850 50  0000 C CNN
+F 1 "22n" V 2312 2850 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D7.0mm_P2.50mm" H 2450 2850 50  0001 C CNN
+F 3 "~" H 2450 2850 50  0001 C CNN
+	1    2450 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small Rgl101
+U 1 1 604E2959
+P 2650 3350
+F 0 "Rgl101" H 2709 3396 50  0000 L CNN
+F 1 "4M4" H 2709 3305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2650 3350 50  0001 C CNN
+F 3 "~" H 2650 3350 50  0001 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C102
+U 1 1 604E2B4A
+P 4750 2950
+F 0 "C102" V 4521 2950 50  0000 C CNN
+F 1 "2u2" V 4612 2950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L31.5mm_W20.0mm_P27.50mm_MKS4" H 4750 2950 50  0001 C CNN
+F 3 "~" H 4750 2950 50  0001 C CNN
+	1    4750 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 2850 2350 2850
+Wire Wire Line
+	2550 2850 2650 2850
+$Comp
+L Device:R_Small RK101
+U 1 1 604E3839
+P 3050 3900
+F 0 "RK101" H 3109 3946 50  0000 L CNN
+F 1 "5k" H 3109 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3050 3900 50  0001 C CNN
+F 3 "~" H 3050 3900 50  0001 C CNN
+	1    3050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small Rb101
+U 1 1 604E40AE
+P 4150 3450
+F 0 "Rb101" H 4209 3496 50  0000 L CNN
+F 1 "160" H 4209 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 3450 50  0001 C CNN
+F 3 "~" H 4150 3450 50  0001 C CNN
+	1    4150 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3450 2650 3550
+Wire Wire Line
+	2650 3550 3050 3550
+Wire Wire Line
+	3050 3550 3050 3800
+Connection ~ 3050 3550
+$Comp
+L power:Earth #PWR0110
+U 1 1 604E4491
+P 3050 4300
+F 0 "#PWR0110" H 3050 4050 50  0001 C CNN
+F 1 "Earth" H 3050 4150 50  0001 C CNN
+F 2 "" H 3050 4300 50  0001 C CNN
+F 3 "~" H 3050 4300 50  0001 C CNN
+	1    3050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0112
+U 1 1 604E4534
+P 1750 3200
+F 0 "#PWR0112" H 1750 2950 50  0001 C CNN
+F 1 "Earth" H 1750 3050 50  0001 C CNN
+F 2 "" H 1750 3200 50  0001 C CNN
+F 3 "~" H 1750 3200 50  0001 C CNN
+	1    1750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4000 3050 4300
+Wire Wire Line
+	1750 3050 1750 3200
+$Comp
+L 5480:S290MS001P003 V101
+U 1 1 604E9E1E
+P 3650 2850
+F 0 "V101" H 3625 3481 50  0000 C CNN
+F 1 "S290MS001P003" H 3625 3390 50  0000 C CNN
+F 2 "Valve: flat pins" H 3150 2400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/el34.pdf" H 3650 2950 50  0001 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3550 4150 3550
+Wire Wire Line
+	4150 2950 4150 3350
+Wire Wire Line
+	4150 2950 4650 2950
+Connection ~ 4150 2950
+$Comp
+L power:+6V #PWR0113
+U 1 1 604EE0D7
+P 3300 3350
+F 0 "#PWR0113" H 3300 3200 50  0001 C CNN
+F 1 "+6V" H 3315 3523 50  0000 C CNN
+F 2 "" H 3300 3350 50  0001 C CNN
+F 3 "" H 3300 3350 50  0001 C CNN
+	1    3300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0104
+U 1 1 604EE633
+P 3800 3350
+F 0 "#PWR0104" H 3800 3100 50  0001 C CNN
+F 1 "Earth" H 3800 3200 50  0001 C CNN
+F 2 "" H 3800 3350 50  0001 C CNN
+F 3 "~" H 3800 3350 50  0001 C CNN
+	1    3800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3350 3550 3350
+Wire Wire Line
+	3550 3350 3550 3200
+Wire Wire Line
+	3750 3200 3750 3350
+Wire Wire Line
+	3750 3350 3800 3350
+Wire Wire Line
+	3300 2700 3300 2400
+Wire Wire Line
+	3300 2400 3650 2400
+Wire Wire Line
+	3650 2400 4450 2400
+Connection ~ 3650 2400
+$Comp
+L power:HT #PWR0106
+U 1 1 604EFB51
+P 4450 2050
+F 0 "#PWR0106" H 4450 2170 50  0001 C CNN
+F 1 "HT" H 4470 2193 50  0000 C CNN
+F 2 "" H 4450 2050 50  0001 C CNN
+F 3 "" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2050 4450 2400
+Wire Wire Line
+	3950 2700 3950 2950
+Connection ~ 3950 2950
+Wire Wire Line
+	3950 2950 4150 2950
+$Comp
+L 5480:A262A2E OT101
+U 1 1 60617790
+P 5250 3250
+F 0 "OT101" H 5250 3775 50  0000 C CNN
+F 1 "A262A2E" H 5250 3684 50  0000 C CNN
+F 2 "royerPSU:ae262a3E" H 5250 3250 50  0001 C CNN
+F 3 "" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3150 4950 3150
+Wire Wire Line
+	4950 3150 4950 3250
+Wire Wire Line
+	4950 3250 5050 3250
+$Comp
+L power:Earth #PWR0108
+U 1 1 6061A22A
+P 5050 3600
+F 0 "#PWR0108" H 5050 3350 50  0001 C CNN
+F 1 "Earth" H 5050 3450 50  0001 C CNN
+F 2 "" H 5050 3600 50  0001 C CNN
+F 3 "~" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3600 5050 3550
+Wire Wire Line
+	5250 3550 5050 3550
+Connection ~ 5050 3550
+Wire Wire Line
+	5050 3550 5050 3450
+Wire Wire Line
+	4850 2950 5050 2950
+$Comp
+L Connector:XLR3_AudioJack3_Combo J104
+U 1 1 604E0074
+P 6800 3300
+F 0 "J104" H 6400 3550 50  0000 C CNN
+F 1 "XLR out" H 7100 3000 50  0000 C CNN
+F 2 "digikey:Term_Block_1x3_P5mm" H 6800 3300 50  0001 C CNN
+F 3 " ~" H 6800 3300 50  0001 C CNN
+	1    6800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0111
+U 1 1 60626493
+P 6500 3350
+F 0 "#PWR0111" H 6500 3100 50  0001 C CNN
+F 1 "Earth" H 6500 3200 50  0001 C CNN
+F 2 "" H 6500 3350 50  0001 C CNN
+F 3 "~" H 6500 3350 50  0001 C CNN
+	1    6500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3600 6800 3800
+Wire Wire Line
+	6500 3300 6500 3350
+Wire Wire Line
+	7100 2950 7100 3300
+Wire Wire Line
+	2650 2850 2650 3250
+$Comp
+L Device:R_Small Rgs101
+U 1 1 6062C7CB
+P 2850 2850
+F 0 "Rgs101" V 2654 2850 50  0000 C CNN
+F 1 "1k" V 2745 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2850 2850 50  0001 C CNN
+F 3 "~" H 2850 2850 50  0001 C CNN
+	1    2850 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 2850 2950 2850
+Wire Wire Line
+	2750 2850 2650 2850
+Connection ~ 2650 2850
+Wire Wire Line
+	5450 2950 7100 2950
+Wire Wire Line
+	6350 3150 6350 3800
+Wire Wire Line
+	6350 3800 6800 3800
+Wire Wire Line
+	5450 3150 6350 3150
+Wire Wire Line
+	5450 3250 6100 3250
+Wire Wire Line
+	5850 3450 5850 4550
+Wire Wire Line
+	5850 3450 5450 3450
+$Comp
+L Connector:AudioJack2_Ground J103
+U 1 1 60610789
+P 6750 4350
+F 0 "J103" H 6782 4675 50  0000 C CNN
+F 1 "iso output" H 6782 4584 50  0000 C CNN
+F 2 "digikey:PinHeader_1x2_P3.96mm_Drill1.6mm" H 6750 4350 50  0001 C CNN
+F 3 "~" H 6750 4350 50  0001 C CNN
+	1    6750 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4550 6750 4550
+Wire Wire Line
+	6550 4350 6100 4350
+Wire Wire Line
+	6100 3250 6100 4350
+Text Notes 5400 3650 0    50   ~ 0
+1200:150
+$EndSCHEMATC
