@@ -122,7 +122,7 @@ U 1 1 604E9E1E
 P 3650 2850
 F 0 "V101" H 3625 3481 50  0000 C CNN
 F 1 "S290MS001P003" H 3625 3390 50  0000 C CNN
-F 2 "Valve: flat pins" H 3150 2400 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x07_P1.27mm_Vertical" H 3150 2400 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/el34.pdf" H 3650 2950 50  0001 C CNN
 	1    3650 2850
 	1    0    0    -1  

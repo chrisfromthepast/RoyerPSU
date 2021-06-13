@@ -1,4 +1,4 @@
-update=6/2/2021 7:07:51 PM
+update=6/12/2021 7:11:02 PM
 version=1
 last_client=kicad
 [general]
@@ -247,6 +247,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=GND
+Clearance=0.4
+TrackWidth=0.5
+ViaDiameter=1
+ViaDrill=0.5
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=fine
 Clearance=0.2
 TrackWidth=0.25
